@@ -5,11 +5,11 @@ const GRADE_C_THRESHOLD = 70;
 const GRADE_D_THRESHOLD = 60;
 
 const calculateLetterGrade = (numericGrade) => {
-  // Add your grade calculation logic here
   if (numericGrade >= GRADE_A_THRESHOLD) return "A";
-  else if (numericGrade >= GRADE_B_THRESHOLD) return "B";
-  else if (numericGrade >= GRADE_C_THRESHOLD) return "C";
-  else if (numericGrade >= GRADE_D_THRESHOLD) return "D";
+  if (numericGrade >= GRADE_B_THRESHOLD) return "B";
+  if (numericGrade >= GRADE_C_THRESHOLD) return "C";
+  if (numericGrade >= GRADE_D_THRESHOLD) return "D";
+  return "F";
 };
 
 // Test cases
