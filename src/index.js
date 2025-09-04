@@ -16,3 +16,7 @@ const calculateLetterGrade = (numericGrade) => {
 const testGrades = [95, 87, 74, 58, 92, 68];
 
 // Run tests and display results
+testGrades.forEach((grade) => {
+  const letterGrade = calculateLetterGrade(grade);
+  console.info(`Grade ${grade}: ${letterGrade}`);
+});
